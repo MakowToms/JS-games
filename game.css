@@ -1,0 +1,71 @@
+/* CSS Document */
+*
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+body {
+  min-height: 100vh;
+  min-width: 50vw;
+  background: linear-gradient(205deg, rgba(180,186,255,1.00), rgba(255,201,249,1.00));
+}
+ h1 {
+  font-size: 45px;
+  color: floralwhite;
+}
+
+#left {
+  position: absolute;
+  top: 15%;
+  right:65%;
+  border: 0px solid white;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+
+}
+
+#right {
+  position: absolute;
+  top: 15%;
+  right:35%;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+}
+
+#ground {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2px;
+  background-color: #00000010;
+  border-radius: 20px;
+}
+#ground > div {
+  background-color: #00000020;
+  border-radius: 20px;
+  transition: all 0.05s ease;
+}
+#ground > div:hover {
+  background-color: #00000010;
+}
+
+#restart{
+  position: sticky;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+
