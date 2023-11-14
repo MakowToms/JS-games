@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MiniFormula</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="start-screen">
+    <div id="start-board">
+      <h1 style="color: white; font-size: 50px; text-shadow: 4px 4px 10px rgba(245, 0, 0, 0.5);">Welcome to MiniFormula</h1>
+      <h2 style="color: white; font-size: 20px; text-shadow: 4px 4px 10px rgba(245, 0, 0, 0.5); margin-bottom: 40px;">Omijaj przeszkody korzystając ze strzałek i zbieraj opony, aby zdobywać punkty.</h2>
+        <button id="start-button">Start Game</button>
+    </div>
+  </div>
+  
+  
+
+  <div id="pitboard" style="display: none;">
+    <div class="pitboard-item">
+      <div class="pitboard-label">Score:</div>
+      <div id="score" class="pitboard-value">0</div>
+    </div>
+    <div class="pitboard-item">
+      <div class="pitboard-label">Time:</div>
+      <div id="time" class="pitboard-value">0 s</div>
+    </div>
+  </div>
+  
+  <div id="game-container" style="display: none;">
+    <img id="player" src="images/formula.png">
+  </div>
+  <script src="script.js"></script>
+
+  <div id="endScreen" style="display: none; text-align: center;">
+    <img src="images/logo.png" alt="Logo" style="margin-top: 0px; max-width: 80%; height: 300px;">
+    <div id="end-board">
+        <div class="pitboard-label-end">Time:</div>
+        <div id="time-end" class="pitboard-value">0 s</div>
+        <div class="pitboard-label-end">Score:</div>
+        <div id="score-end" class="pitboard-value">0</div>
+        <button id="retry-button">Retry</button>
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>

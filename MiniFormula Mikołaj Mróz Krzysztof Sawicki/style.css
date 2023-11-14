@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 1000;
+    overflow: hidden;
+    background-image: url('images/grass.png');
+  }
+  #start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    background-image: url('images/start_screen.png');
+    background-size: cover; 
+  }
+
+  #start-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    padding: 80px;
+    background-color: #333; 
+    border: 10px solid red;
+    border-image: linear-gradient(to right, rgb(0, 68, 255), red);
+    border-image-slice: 1;
+  }
+
+
+
+  
+
+  #start-button {
+    background: linear-gradient(to right, rgb(56, 109, 255), #fa1616);
+    border-radius: 80px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 48px;
+    padding: 10px 16px;
+    text-shadow: 4px 4px 10px rgba(245, 0, 0, 0.5);
+  }
+  
+  #game-container {
+    position: relative;
+    width: 2500px;
+    height: 600px;
+    margin-top: 165.5px;
+    background-image: url('images/road.png');
+  }
+
+  #pitboard {
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    border: 3px solid red;
+    border-image: linear-gradient(to right, white, red);
+    border-image-slice: 1;
+  }
+  
+  .pitboard-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .pitboard-label {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .pitboard-value {
+    font-size: 22px;
+  }
+  
+
+  #player {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    left: 0px;
+    top: 260px;
+  }
+  
+  .tree {
+    z-index: 1;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .truck {
+    z-index: 3;
+    position: absolute;
+    width: 600px;
+    height: 100px;
+  }
+
+  .tire {
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+
+  .car {
+    z-index: 2;
+    position: absolute;
+    width: 140px;
+    height: 80px;
+  }
+
+  #end-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    background-color: black;
+    background-size: cover; 
+}
+
+
+#end-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 600px;
+  margin-right: 600px;
+  padding: 40px;
+  background-color: #333; 
+  border: 10px solid red;
+  border-image: linear-gradient(to right, rgb(0, 68, 255), red);
+  border-image-slice: 1;
+}
+
+
+  #retry-button {
+    background: linear-gradient(to right, rgb(56, 109, 255), #fa1616);
+    border-radius: 80px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 48px;
+    padding: 10px 16px;
+    text-shadow: 4px 4px 10px rgba(245, 0, 0, 0.5);
+  }
+
+  #time-end, #score-end {
+    font-size: 60px;
+    color: #fff;
+}
+
+.pitboard-label-end {
+  font-size: 40px;
+    color: #fff;
+}
