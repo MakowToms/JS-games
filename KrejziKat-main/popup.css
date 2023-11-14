@@ -1,0 +1,78 @@
+.popup-container{
+  width: 1000px;
+  margin: auto;
+  margin-top: 15%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  top: 20%;
+  /* left: 25%; */
+  background: linear-gradient(-45deg, #ffffff, #d91919, black);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+  border: 15px solid black;
+  box-shadow: 10px 10px 10px darkslategray
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.popup-text{
+  color:white;
+  font-family: 'Arcade Interlaced', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+
+}
+.tryagainbutton{
+  width: 360px;
+  color: white;
+  font-family: 'Arcade Interlaced', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+
+  background: #2f2c2c;
+  border: 15px solid black;
+  padding: 15px;
+ box-shadow: 10px 10px 10px darkslategray;
+}
+
+.tryagainbutton:hover{
+  background: linear-gradient(-90deg, #ff0000, #ff7400, #ffda00, #33ff00, blue, blueviolet);
+    background-size: 400% 100%;
+  border: 15px solid white;
+    animation: gradient 0.3s linear infinite;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 00% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 00% 0%;
+    }
+}
+
+.tryagainbutton:active{
+  background-color: #1e0431;
+  border: 15px solid rgb(0, 0, 0);
+}
+
+
