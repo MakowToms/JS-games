@@ -1,0 +1,52 @@
+* { padding: 0; margin: 0; }
+    body {
+        background-color: black;
+    }
+    .container {
+      text-align: center;
+      color: white;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 130px;
+      display: block;
+      background-color: black;
+    }
+    .niceBox {
+      padding: 5px;
+      border: 2px solid white;
+      border-radius: 10px; 
+    }
+
+    .image {
+      position: fixed;
+      top: 10px;
+      left: 200px;
+      visibility: hidden;
+      mix-blend-mode: multiply;
+    }
+    .endGame{
+      position: fixed;
+      width: 400px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px; 
+      margin-left: -200px;
+      visibility: hidden;
+      display: block;
+      text-align: center;
+      background-color: purple;
+    }
+    canvas {
+      background: black;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      top: 50px;
+      left: 10%;
+      width: 80%;
+      height: 70vh;
+      border: 10px solid #ffffff;
+      overflow: hidden;
+    }
