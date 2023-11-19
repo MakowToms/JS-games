@@ -1,0 +1,185 @@
+.animation-container {
+              position: absolute;
+              width : 100px;
+              height : 170px;
+                cursor: none;
+                user-select: none;
+            }
+
+        .container {
+          position: relative;
+          top : 30px;
+          height : 150px;
+          width : 85px;
+          transform : scale(0.5) translateX(0) scaleY(0.7);
+        }
+
+        .y-axis-container {
+           animation: bounce 2.6s infinite ease-in-out;
+        }
+
+        .shadow {
+           animation: scaling 2.6s infinite ease-in-out;
+        }
+
+        .coin {
+          position : absolute;
+          height : 150px;
+          left : 0;
+          width: 85px;
+          background : gold;
+          border-radius : 100%;
+          overflow : hidden;
+        }
+
+        .side-coin {
+          position : absolute;
+          left : 83px;
+          height : 150px;
+          width: 33px;
+          background : #f5b642;
+        }
+
+        .side {
+          position: absolute;
+          background : #f5b642;
+          left : 21px;
+          width : 86px;
+          height : 152px;
+          top: -2px;
+        }
+
+        .shine {
+          width : 200px;
+          height : 10px;
+          background : rgba(255,255,255,0.65);
+          transform: rotate(25deg);
+          animation : shine 5s infinite;
+        }
+
+        .flash {
+          z-index: 100;
+          position : absolute;
+          width : 8px;
+          height : 8px;
+          background : white;
+          top: 15px;
+          right : 10px;
+          animation : flash 7s infinite;
+        }
+
+        .dai {
+          position : absolute;
+          width: 50px;
+          height : 50px;
+          background : #faf20a;
+          border: 1px solid white;
+          transform : rotate(53deg) skew(26deg);
+          top: 47px;
+          left : 17px;
+          overflow : hidden;
+        }
+
+        .cutout {
+          z-index : 20;
+          width : 150%;
+          height : 150%;
+          background : #ffee38;
+          transform : rotate(45deg);
+          position : absolute;
+          top : 14px;
+          left : 14px;
+        }
+
+        .dai-shadow {
+          z-index : 20;
+          width : 150%;
+          height : 150%;
+          background : rgba(0,0,0,0.07);
+          transform : rotate(45deg);
+          position : absolute;
+          top : 14px;
+          right : 14px;
+        }
+
+        .inner-dai {
+          position : relative;
+          background : white;
+          height : 35px;
+          width: 35px;
+          top : 8px;
+          left : 8px;
+        }
+
+        .inner-inner-dai {
+          position : relative;
+          background : #ffee38;
+          width: 10px;
+          height : 10px;
+          top : 12px;
+          left : 12px;
+        }
+
+        .shadow {
+          position : relative;
+          left : calc(50% - 30px);
+          top : -20px;
+          background : rgba(0,0,0,0.2);
+          height : 15px;
+          width : 50px;
+          animation : scaling 2.6s infinite;
+          border-radius: 100%;
+        }
+        @keyframes bounce {
+          20% {
+            animation-timing-function: ease-out;
+            transform: translateY(-30px);
+          }
+
+           50% {
+            animation-timing-function: ease-out;
+            transform: translateY(-40px);
+          }
+        }
+
+        @keyframes scaling {
+          20% {
+            transform: scale(0.6);
+          }
+
+          50% {
+            transform: scale(0.5);
+          }
+        }
+
+        @keyframes flash {
+          0% {
+            transform : rotate(0deg) scale(0);
+          }
+          8% {
+            transform : rotate(0deg) scale(0);
+          }
+          10% {
+            transform : rotate(150deg) scale(1.8);
+          }
+          15% {
+            transform : rotate(45deg) scale(0);
+          }
+          100% {
+            transform : rotate(45deg) scale(0);
+          }
+        }
+
+
+        @keyframes shine {
+          20% {
+            transform : rotate(25deg) translateY(200px);
+          }
+
+          100% {
+            transform : rotate(25deg) translateY(200px);
+          }
+        }
+
+
+
