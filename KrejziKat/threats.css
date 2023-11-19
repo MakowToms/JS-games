@@ -1,0 +1,73 @@
+
+
+.Threat:hover{
+    border: 3px solid #f83e3e;
+}
+.noThreat:hover{
+    border: 3px solid #f83e3e;
+}
+.Threat {
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: linear-gradient(-45deg, #d616cc, #19eacc);
+    border: 1px solid black;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+    font-size:25px;
+    color:white;
+    font-family: 'Arcade Interlaced', sans-serif;
+    user-select: none;
+    opacity: 0.99;
+    z-index: 23;
+    cursor: none;
+    text-shadow: 3px 3px 3px black;
+}
+.noThreat {
+    text-anchor: middle;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 15px;
+    position: absolute;
+    opacity: 0.2;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(-45deg, #d616cc, #19eacc);
+    border: 1px solid black;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+    font-size: 25px;
+    color: white;
+    font-family: 'Arcade Interlaced', sans-serif;
+    user-select: none;
+    z-index: 23;
+    cursor: none;
+    text-shadow: 2px 2px 0px red;
+}
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+#cursor{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            content:url(https://art.pixilart.com/a438bbac3e9ea9d.png);
+            z-index: 24;
+            user-select: none;
+            pointer-events: none;
+        }
