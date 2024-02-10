@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("./MINI.jpg");
+    background-size: cover;
+    color: white;
+
+    /*---------------------------------Takie coś znalazłem dla myszki---------------------------------*/
+    cursor: url('mouse2.png'), auto;
+    /*---------------------------------Takie coś znalazłem dla myszki---------------------------------*/
+
+
+}
+
+#plansza{
+    width: 660px;
+    height: 540px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("./pw.png");
+    background-size: contain;
+    border: 4px solid whitesmoke;
+    border-radius: 30px;
+
+}
+
+#plansza div{
+    width: 220px;
+    height: 180px;
+    background-image: url(./monitorX.png);
+    background-size: cover;
+    
+}
+
+#plansza div img{
+    margin-top: 20px;
+    width:130px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* .cursor{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url("./mouse2.png");
+    background-size: 100% 100%;
+
+} */
+
+
+    /*---------------------------------Animacja punkciora---------------------------------*/
+#punkt-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 24px;
+    color: #00ff00;
+    animation: showPoints 1s ease-out;
+}
+
+@keyframes showPoints {
+    from {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+    /*---------------------------------Animacja punkciora---------------------------------*/
